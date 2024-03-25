@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomePageView, RegisterView, UserLoginView, UserLogoutView,cartPageView,productPageView,checkoutPageView,ProductDetailView,CartView,contactPageView
+from .views import HomePageView, RegisterView, UserLoginView, UserLogoutView,cartPageView,AllProductsListView,checkoutPageView,ProductDetailView,CartView,contactPageView
 from django.conf.urls.static import static
 from django.conf import settings
 from . import views
@@ -12,7 +12,7 @@ urlpatterns = [
     
     path('contact/',contactPageView.as_view(), name='contact'),
     
-    path('product/',productPageView.as_view(), name='product'),
+    path('productlist/',AllProductsListView.as_view(), name='product'),
     path('product/<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
     path('checkout/',checkoutPageView.as_view(), name='checkout'),
     path('register/', RegisterView.as_view(), name='register'),

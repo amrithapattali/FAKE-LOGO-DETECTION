@@ -38,7 +38,7 @@
 		<div class="container-fluid">
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="{% static 'img/logo.png' %}" alt="logo">
+				<img src="{% static 'img/logo1.jpg' %}" alt="logo">
 			</div>
 			<!-- responsive -->
 			<div class="nav-switch">
@@ -51,10 +51,10 @@
 			<!-- site menu -->
 			<ul class="main-menu">
 				<li><a href="{% url 'home' %}">Home</a></li>
-				<li><a href="#">Woman</a></li>
-				<li><a href="#">Man</a></li>
+				<li><a href="#">PRODUCTS</a></li>
+				{% comment %} <li><a href="#">Man</a></li>
 				<li><a href="#">LookBook</a></li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="#">Blog</a></li> {% endcomment %}
 				<li><a href="{% url 'contact' %}">Contact</a></li>
 			</ul>
 		</div>

@@ -45,8 +45,13 @@ class CartView(View):
 class cartPageView(TemplateView):
     template_name = 'cart.html'
     
-class productPageView(TemplateView):
-    template_name = 'product.html'
+# class productPageView(TemplateView):
+#     template_name = 'product.html'
+
+class AllProductsListView(ListView):
+    model = Product
+    template_name = 'productlist.html'
+    context_object_name = 'products'
     
 class contactPageView(TemplateView):
     template_name = 'contact.html'
